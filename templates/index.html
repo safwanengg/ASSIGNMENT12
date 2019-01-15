@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+   
+  <main class="container">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <!-- Mars News -->
+  <div class="row" id="Mars-news">
+    <h2><strong>Latest Mars News</strong></h2>
+    <div class="col-md-12">
+    <h3><strong><class="heading">{{news.title}}</strong></h3>
+    <h4><bold>{{news.body}}</bold></h4>
+    </div>
+    </div>
+    <div class="card" style="width: 40rem;">
+    <div class="card-body">
+    <h3><bold>Featured Mars Image</bold></h3>
+    <section id="figure">
+    <img src="https://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA00271_ip.jpg" alt="">
+    </section>
+    </div>
+    </div>
+    <div class="card" style="width: 80rem;">
+    <div class="card-body">
+    <h3><bold>Current Weather on Mars</bold></h3>
+    <h4>{{news.weather}}</h4>
+    </div>
+    </div>
+    <div class="card" style="width: 40rem;">
+      <div class="card-body">
+      <h3><bold>Mars Facts</bold></h3>
+      <section id="figure">
+      <img src="../table.jpg" width="700" height="700">
+      </section>
+      </div>
+      </div> 
+     <div class="card" style="width: 40rem;">
+    <div class="card-body">
+    <h3><bold>Valles Marineris Hemisphere</bold></h3>
+    <section id="figure">
+    <img src="https://mars.nasa.gov/system/resources/detail_files/6453_mars-globe-valles-marineris-enhanced-full2.jpg" width="500" height="500">
+    </section>
+    </div>
+    </div> 
+    <div class="card" style="width: 40rem;">
+      <div class="card-body">
+      <h3><bold>Cerberus Hemisphere</bold></h3>
+      <section id="figure">
+      <img src="https://planetary.s3.amazonaws.com/assets/images/4-mars/2014/20140202_cerberus_enhanced.jpg" width="500" height="500">
+      </section>
+      </div>
+      </div> 
+      <div class="card" style="width: 40rem;">
+        <div class="card-body">
+        <h3><bold>Schiaparelli Hemisphere</bold></h3>
+        <section id="figure">
+        <img src="https://planetary.s3.amazonaws.com/assets/images/4-mars/2014/20140202_schiaparelli_enhanced.jpg" width="500" height="500">
+        </section>
+        </div>
+        </div> 
+        <div class="card" style="width: 40rem;">
+          <div class="card-body">
+          <h3><bold>Syrtis Major Hemisphere</bold></h3>
+          <section id="figure">
+          <img src="https://planetary.s3.amazonaws.com/assets/images/4-mars/2014/20140202_syrtis_major_enhanced.jpg" width="500" height="500">
+          </section>
+          </div>
+          </div> 
+  </main>
+
+</body>
+
+</html>
